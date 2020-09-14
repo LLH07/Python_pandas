@@ -1,0 +1,50 @@
+CH 3 內容:
+    set_index()
+    index_col 用法
+    
+    sort_index()
+    inplace 用法
+    
+CH 4 內容:
+    數據過濾
+    isin()
+    string_contains()
+   
+CH 5 內容:
+    更改 columns 名稱
+        對部分更改: list.columns = [], list.rename(inplace)
+        對全部更改: list comprehension, .str.replace()
+    初級的更改 row 名稱:
+        對一個 row 的全部 columns 做修改: df.loc[row 編號] = []
+        對一個 row 的部分 columns 做修改
+        對一個 row 的一個 columns 做修改
+        
+        對多個 row 做修改:
+            方法一: df[column 名稱] = df[column 名稱].str...
+            方法二: apply
+            方法三: map
+            方法四: applymap
+            方法五: replace
+CH6 內容:
+    drop() 與 appand()，關鍵字 expand.
+CH7 內容:
+    sort_values() 與 sort_index(by, inplace)
+    df[col 名稱].nlargest(數字) [不會列出詳細資料] 與 df.largest(數字，col 名稱) 的不同 [列出詳細資料]
+CH8 內容:
+    median(), mean()
+    count(), value_counts(normalize = True)
+    .groupby()
+        get_group()
+    .agg()
+    .concat([你要 concat 的 series]) # 預設以 row 方向 concat
+CH9 內容:
+    .dropna(axis, how, subset, inplace)
+    .isna()
+    .fillna(inplace)
+    .dtypes [這是一個 attribute，非 method]
+    .astype()
+    
+    na.values
+    .unique()
+        
+    
